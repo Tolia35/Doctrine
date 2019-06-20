@@ -1,0 +1,5 @@
+vendor/
+var/
+Entity/Proxy
+.idea/
+
