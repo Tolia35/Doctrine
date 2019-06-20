@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7548bac6-0325-41bc-be00-b12a3b0835ab" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/dictionaries/rigolus.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/Doctrine.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Doctrine.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
@@ -30,14 +31,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bootstrap.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="570">
-              <caret line="38" column="15" selection-start-line="38" selection-start-column="15" selection-end-line="38" selection-end-column="15" />
+            <state relative-caret-position="585">
+              <caret line="39" column="3" lean-forward="true" selection-start-line="39" selection-start-column="3" selection-end-line="39" selection-end-column="3" />
               <folding>
                 <element signature="e#44#73#0#PHP" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" selection-start-line="5" selection-end-line="5" />
             </state>
           </provider>
         </entry>
@@ -109,6 +119,7 @@
         <option value="$PROJECT_DIR$/Entity/Member.php" />
         <option value="$PROJECT_DIR$/Entity/Project.php" />
         <option value="$PROJECT_DIR$/bootstrap.php" />
+        <option value="$PROJECT_DIR$/.gitignore.php" />
       </list>
     </option>
   </component>
@@ -158,6 +169,11 @@
             <path>
               <item name="Doctrine" type="b2602c69:ProjectViewProjectNode" />
               <item name="Doctrine" type="462c0819:PsiDirectoryNode" />
+              <item name="var" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Doctrine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Doctrine" type="462c0819:PsiDirectoryNode" />
               <item name="vendor" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -201,12 +217,12 @@
       <workItem from="1560955025353" duration="1359000" />
       <workItem from="1561014091568" duration="3605000" />
       <workItem from="1561023215513" duration="1830000" />
-      <workItem from="1561034052218" duration="4229000" />
+      <workItem from="1561034052218" duration="4560000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13595000" />
+    <option name="totallyTimeSpent" value="13926000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -219,9 +235,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="100" y="23" width="1948" height="1081" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13955928" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13955928" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -234,7 +249,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.49140546" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.49140546" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -366,11 +381,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/bootstrap.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="38" column="15" selection-start-line="38" selection-start-column="15" selection-end-line="38" selection-end-column="15" />
+        <state relative-caret-position="585">
+          <caret line="39" column="3" lean-forward="true" selection-start-line="39" selection-start-column="3" selection-end-line="39" selection-end-column="3" />
           <folding>
             <element signature="e#44#73#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>

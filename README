@@ -1,0 +1,8 @@
+# Doctrine et Twig
+
+## Installation
+
+```shell
+composer install
+php vendor/bin/doctrine orm:generate-proxies
+```
