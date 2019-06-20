@@ -280,4 +280,9 @@ class Project
         return $this->getDateEnd()->diff($this->getDateStart())->days;
     }
 
+    public function isFinished(): bool
+    {
+        return ($this->getDateEnd() != null);
+    }
+
 }

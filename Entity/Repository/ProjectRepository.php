@@ -47,10 +47,12 @@ class ProjectRepository extends EntityRepository
 
         $qb->select("project", "category")
             ->innerJoin("project.category", "category")
-            ->where("project.price > :price");
+            ->where($qb->expr()->gt("project.price", ":price"))
+        ;
 
         $qb->setParameter("price", $price);
 
         return $qb->getQuery()->getResult();
     }
+
 }

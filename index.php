@@ -51,8 +51,16 @@ $projects = $entityManager->getRepository(Project::class)->findMostExpensives(50
             <?= $project->getTitle(); ?><br>
             <?= $project->getCategory()->getLabel(); ?><br>
             <?= $project->getDateStart()->format("d-m-Y"); ?><br>
+            <?php if ($project->isFinished()): ?>
+                <?= $project->getDateEnd()->format("d-m-Y"); ?><br>
+            <?php endif; ?>
             <?= $project->getPrice(); ?><br>
             Durée : <?= $project->getDuration(); ?>
+            <?php if (!$project->isFinished()): ?>
+                (en cours...)
+            <?php endif; ?>
+            <br>
+            <?= count($project->getMember()); ?>
 
             <ul>
                 <?php foreach ($project->getMember() as $membre) : ?>

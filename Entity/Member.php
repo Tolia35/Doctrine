@@ -43,6 +43,13 @@ class Member
     private $picture;
 
     /**
+     * @var string|null
+     *
+     * @ORM\Column(name="facebook", type="string", length=255, nullable=true)
+     */
+    private $facebook;
+
+    /**
      * @var \Doctrine\Common\Collections\Collection
      *
      * @ORM\ManyToMany(targetEntity="Entity\Project", mappedBy="member")
