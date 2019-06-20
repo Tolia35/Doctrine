@@ -4,6 +4,11 @@ require_once "bootstrap.php";
 use Entity\Category;
 use Entity\Project;
 
+
+echo $twig->render("default/homepage.html.twig");
+
+die;
+
 /*
 // INSERT INTO
 $cat = new Category();
