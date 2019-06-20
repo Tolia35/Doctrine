@@ -7,8 +7,9 @@ use Doctrine\ORM\Mapping as ORM;
 /**
  * Project
  *
- * @ORM\Table(name="project", indexes={@ORM\Index(name="fk_project_category1_idx", columns={"category_id"}), @ORM\Index(name="idx_title_description", columns={"title", "description"})})
+ * @ORM\Table(name="project", indexes={@ORM\Index(name="fk_project_category1_idx", columns={"category_id"}), @ORM\Index(name="idx_title_description", columns={"title", "description"}, flags={"fulltext"})})
  * @ORM\Entity(repositoryClass="Entity\Repository\ProjectRepository")
+ * @ORM\HasLifecycleCallbacks
  */
 class Project
 {
@@ -283,6 +284,16 @@ class Project
     public function isFinished(): bool
     {
         return ($this->getDateEnd() != null);
+    }
+
+    /**
+     * @ORM\PrePersist
+     */
+    public function prePersist(): void
+    {
+        if ($this->dateStart == null) {
+            $this->setDateStart(new \DateTime());
+        }
     }
 
 }
