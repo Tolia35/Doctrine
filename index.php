@@ -5,7 +5,14 @@ use Entity\Category;
 use Entity\Project;
 
 
-echo $twig->render("default/homepage.html.twig");
+$projects = $entityManager->getRepository(Project::class)->findAll();
+
+
+
+echo $twig->render("default/homepage.html.twig", [
+    'projects' => $projects
+]);
+
 
 die;
 

@@ -36,5 +36,8 @@ $entityManager = EntityManager::create($dbParams, $config);
 
 $loader = new \Twig\Loader\FilesystemLoader(__DIR__ . "/templates");
 $twig = new \Twig\Environment($loader, [
-    'cache' => __DIR__ . "/var/cache"
+    'debug'=>true
+    // 'cache' => __DIR__ . "/var/cache"
 ]);
+
+$twig->addExtension(new \Twig\Extension\DebugExtension());

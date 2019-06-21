@@ -1,7 +1,22 @@
 {% extends 'base.html.twig' %}
 
+{% block title %}Mon site internet{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+{% endblock %}
+
 {% block content %}
 
-    <h1>Salut le peuple</h1>
+    <h1>Salut les gens !</h1>
+
+    <p>{{ 'Liste des ' ~ projects|length ~ ' projets.' }}</p>
+
+    <section>
+        {% for project in projects %}
+            <h2>{{ project.title }}</h2>
+        {% endfor %}
+    </section>
 
 {% endblock %}
