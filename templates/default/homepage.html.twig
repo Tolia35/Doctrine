@@ -1,4 +1,5 @@
 {% extends 'base.html.twig' %}
+{# @var projects \Entity\Project[] #}
 
 {% block title %}Mon site internet{% endblock %}
 
@@ -14,8 +15,10 @@
     <p>{{ 'Liste des ' ~ projects|length ~ ' projets.' }}</p>
 
     <section>
-        {% for project in projects %}
-            <h2>{{ project.title }}</h2>
+        {% for p in projects if p.price > 50000 %}
+            {% include 'project/thumbnail.html.twig' with { 'project': p } only %}
+        {% else %}
+            <p>Aucun projet à afficher</p>
         {% endfor %}
     </section>
 
